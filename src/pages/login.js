@@ -2,13 +2,13 @@ import Head from "next/head";
 
 export default function Login() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen flex items-center justify-center bg-gray-200 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8">
         <Head>
           <title>Login</title>
         </Head>
         <div>
-          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
+          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-700">
             Sign in to your account
           </h2>
         </div>
@@ -25,7 +25,7 @@ export default function Login() {
                 // type="email"
                 autoComplete="id"
                 required
-                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                className="appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-lg  focus:outline-none focus:ring-amber-400 focus:border-amber-500 focus:z-10 mb-3 sm:text-sm"
                 placeholder="ID"
               />
             </div>
@@ -36,10 +36,10 @@ export default function Login() {
               <input
                 id="password"
                 name="password"
-                type="password"
+                // type="password"
                 autoComplete="current-password"
                 required
-                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                className="appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-lg  focus:outline-none focus:ring-amber-400 focus:border-amber-500 focus:z-10 sm:text-sm"
                 placeholder="Password"
               />
             </div>
@@ -50,7 +50,7 @@ export default function Login() {
                 id="remember"
                 name="remember"
                 type="checkbox"
-                className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
+                className="h-4 w-4 text-amber-500 focus:ring-amber-600 border-gray-300 rounded"
               />
               <label
                 htmlFor="remember-me"
@@ -62,7 +62,7 @@ export default function Login() {
             <div className="text-sm">
               <a
                 href="#"
-                className="font-medium text-indigo-600 hover:text-indigo-500"
+                className="font-medium text-amber-500 hover:text-amber-600"
               >
                 forget password
               </a>
